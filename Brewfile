@@ -4,6 +4,8 @@ tap 'homebrew/binary'
 tap 'homebrew/dupes'
 
 tap 'railwaycat/emacsmacport'
+brew 'emacs-mac', args: [ 'with-xml2', 'with-gnutls', 'with-emacs-icons-project-EmacsIcon8', 'with-ctags', 'with-dbus', 'with-xml2' ]
+
 brew 'autojump'
 brew 'archey'
 brew 'aspell', args: ['with-lang-ru', 'with-lang-uk', 'with-lang-pl', 'with-lang-en']
@@ -16,7 +18,6 @@ brew 'ctags'
 brew 'docker'
 brew 'docker-compose'
 brew 'docker-machine'
-brew 'emacs'
 brew 'elasticsearch'
 brew 'geoip'
 brew 'git'
