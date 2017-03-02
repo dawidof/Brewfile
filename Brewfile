@@ -1,24 +1,17 @@
-## caskroom/cask
+before echo before
 tap 'caskroom/cask'
-
-## homebrew/binary
 tap 'homebrew/binary'
-
-## homebrew/dupes
 tap 'homebrew/dupes'
-
-tap 'caskroom/fonts'
-
-tap 'homebrew/fuse'
-cask 'osxfuse'
-brew 'homebrew/fuse/ntfs-3g'
 
 brew 'autojump'
 brew 'archey'
+brew 'aspell', args: ['with-lang-ru', 'with-lang-uk', 'with-lang-pl', 'with-lang-en']
 brew 'axel'
 brew 'bash'
 brew 'boot2docker'
 brew 'curl'
+brew 'coreutils'
+brew 'ctags'
 brew 'docker'
 brew 'docker-compose'
 brew 'docker-machine'
@@ -34,9 +27,11 @@ brew 'heroku-toolbelt'
 brew 'htop'
 brew 'httpie'
 brew 'hub'
+brew 'icu4c'
 brew 'irssi'
 brew 'imagemagick'
-brew 'lynx'
+#brew 'lynx'
+brew 'mas'
 brew 'mc'
 brew 'memcached'
 brew 'mysql', restart_service: true
@@ -64,18 +59,22 @@ brew 'tree'
 brew 'v8'
 brew 'vim', args: ['with-override-system-vi']
 brew 'watch'
+brew 'weechat', args: ['with-aspell', 'with-curl', 'with-lua', 'with-perl', 'with-python', 'with-ruby']
 brew 'wget'
 brew 'xz'
 brew 'zsh'
+brew 'youtube-dl'
 brew 'z'
 
+tap 'homebrew/completions'
+brew 'rails-completion'
 
 cask_args appdir: '~/Applications'
-cask 'air-video-server-hd'
+#cask 'air-video-server-hd'
 ##, args: { appdir: '/Applications' }
 # cask 'abricotine' Markdown editor
 cask 'appcleaner'
-cask 'atom'
+#cask 'atom'
 cask 'caffeine'
 cask 'chromium'
 cask 'dash'
@@ -92,12 +91,13 @@ cask 'no-ip-duc'
 cask 'ngrok'
 cask 'qbittorrent'
 cask 'qt-creator'
-cask 'seil'
+#cask 'seil'
 cask 'sequel-pro'
 cask 'skype'
-cask 'steam'
+#cask 'steam'
 cask 'sublime-text'
 cask 'slack'
+cask 'sourcetree'
 cask 'teamviewer'
 cask 'toggldesktop'
 cask 'transmission'
@@ -107,8 +107,16 @@ cask 'vagrant'
 cask 'viber'
 cask 'virtualbox'
 cask 'vlc'
-cask 'vox-preferences-pane'
-cask 'vox'
+#cask 'vox-preferences-pane'
+#cask 'vox'
+
+
+tap 'caskroom/fonts'
+cask 'font-devicons'
+cask 'font-fontawesome'
+cask 'font-noto-sans'
+cask 'font-noto-sans-cjk-jp'
+cask 'font-noto-serif'
 
 cask 'font-hack'
 cask 'font-source-code-pro'
@@ -125,3 +133,17 @@ cask 'webpquicklook'
 cask 'suspicious-package'
 cask 'quicklookase'
 cask 'qlvideo'
+
+
+# appstore 409183694 Keynote (7.0.5)
+appstore 409222199 Cyberduck (5.3.7)
+appstore 409203825 Numbers (4.0.5)
+appstore 409201541 Pages (6.0.5)
+appstore 497799835 Xcode (8.2.1)
+# appstore 408981434 iMovie (10.1.4)
+
+# Other commands
+echo other commands
+
+# After commands
+after echo after
